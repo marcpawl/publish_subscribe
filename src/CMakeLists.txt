@@ -41,12 +41,20 @@ if(CPP_STARTER_USE_NANA)
   add_subdirectory(nana)
 endif()
 
+find_package(benchmark)
+include_directories(${BENCHMARK_INCLUDE_DIRS})
+set(LIBS ${LIBS} ${BENCHMARK_LIBRARIES})
+
+
 # Generic test that uses conan libs
-add_executable(intro main.cpp)
+add_executable(intro main.cpp legacy.cpp)
 target_link_libraries(
   intro
+  PUBLIC
+  ${LIBS}
+  benchmark::benchmark
   PRIVATE project_options
           project_warnings
-          CONAN_PKG::docopt.cpp
-          CONAN_PKG::fmt
-          CONAN_PKG::spdlog)
+          )
+
+

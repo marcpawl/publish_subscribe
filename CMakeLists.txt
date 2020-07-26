@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 
 # Set the project name to your project name, my project isn't very descriptive
 project(myproject CXX)
+set(BENCHMARK_DIR /home/marcpawl/.conan/data/benchmark/1.5.0/_/_/build/10402ff4e4348155b5eee65f407b9f90f040f9a5/build_subfolder/source_subfolder/src/generated/)
 include(cmake/StandardProjectSettings.cmake)
 include(cmake/PreventInSourceBuilds.cmake)
 
