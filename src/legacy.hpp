@@ -13,6 +13,11 @@ public:
 class Publisher
 {
 public:
+  Publisher() 
+  {
+    subscribers_.reserve(1024);
+  }
+
   /** Start sending notifications when the object has changed in 
     * the future. {@link #remove_subscriber(Subscriber*)} must
     * be called prior to the subscriber being deleted.
@@ -36,6 +41,9 @@ class UpdateCounter : public Subscriber {
 private:
   int updates_ = 0;
   Publisher* publisher_ = nullptr;
+
+  //void* padding1_;
+  //void* padding2_;
   
 public:
   UpdateCounter(Publisher* publisher) 
@@ -50,17 +58,6 @@ public:
   ~UpdateCounter() override {
     if (publisher_ != nullptr) {
       publisher_->remove_subscriber(this);
-    }
-  }
-
-  void set_publisher(Publisher* publisher)
-  {
-    if (publisher_ != nullptr) {
-      publisher_->remove_subscriber(this);
-    }
-    publisher_=publisher;
-    if (publisher_ != nullptr) {
-      publisher_->add_subscriber(this);
     }
   }
 

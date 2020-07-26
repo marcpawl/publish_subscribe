@@ -47,7 +47,7 @@ set(LIBS ${LIBS} ${BENCHMARK_LIBRARIES})
 
 
 # Generic test that uses conan libs
-add_executable(intro main.cpp legacy.cpp)
+add_executable(intro main.cpp legacy.cpp cadr.cpp)
 target_link_libraries(
   intro
   PUBLIC
