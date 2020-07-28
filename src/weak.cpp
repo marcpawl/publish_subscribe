@@ -1,16 +1,32 @@
 
 #include "weak.hpp"
 #include <algorithm>
+#include "limits.hpp"
 
 namespace marcpawl::weak {
+
+  UpdateCounter::UpdateCounter(Publisher* publisher, int* updates)
+  : subscription_(publisher->add_subscriber(this))
+  , updates_(updates)
+  {
+  }
+
+Subscription::  Subscription(Subscriber* subscriber, std::weak_ptr<Unsubscriber> unsubscriber)
+  : subscriber_(subscriber)
+  , unsubscriber_(std::move(unsubscriber))
+  {}
 
 Subscription::~Subscription()
 {
   std::shared_ptr<Unsubscriber> unsubscriber = unsubscriber_.lock();
   if (nullptr != unsubscriber) {
-    unsubscriber->remove_subscriber(&subscriber_);
+    unsubscriber->remove_subscriber(subscriber_);
   }
 }
+
+Unsubscriber::Unsubscriber(Publisher& publisher)
+  : publisher_(publisher)
+  {}
 
 void Unsubscriber::remove_subscriber(Subscriber* subscriber)
 {
@@ -20,14 +36,15 @@ void Unsubscriber::remove_subscriber(Subscriber* subscriber)
 
 Publisher::Publisher()
   {
-unsubscriber_ = std::make_shared<Unsubscriber>(*this);
-    subscribers_.reserve(1024);
+// NOLINTNEXTLINE (cppcoreguidelines-owning-memory)
+unsubscriber_ .reset( new Unsubscriber(*this));
+    subscribers_.reserve(reserved);
   }
 
 Subscription Publisher::add_subscriber(Subscriber* subscriber)
 {
    subscribers_.push_back(subscriber);
-   return Subscription{*subscriber, unsubscriber_};
+   return Subscription{subscriber, unsubscriber_};
 }
 
 void Publisher::remove_subscriber(Subscriber* subscriber)

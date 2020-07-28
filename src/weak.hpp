@@ -8,16 +8,18 @@ class Publisher;
 class Subscriber;
 class Unsubscriber;
 
+class Subscriber {
+public:
+  virtual ~Subscriber() = default;
+  /** Notification that on object being subscribed to has changed. */
+  virtual void on_update() = 0;
+};
+
 /** As long as the subscription still exists
   * the subscriber will be notified.
   */
 class Subscription {
 public:
-  Subscription(Subscriber& subscriber, std::weak_ptr<Unsubscriber> unsubscriber)
-  : subscriber_(subscriber)
-  , unsubscriber_(unsubscriber)
-  {}
-
   Subscription(Subscription const&) = delete;
   Subscription(Subscription &&) = default;
   ~Subscription();
@@ -25,30 +27,21 @@ public:
   Subscription& operator=(Subscription &&) = default;
 
 private:
-  Subscriber& subscriber_;
+  Subscription(Subscriber* subscriber, std::weak_ptr<Unsubscriber> unsubscriber);
+  Subscriber* subscriber_;
   std::weak_ptr<Unsubscriber>  unsubscriber_;
   friend class Unsubscriber;
   friend class Publisher;
 };
 
 class Unsubscriber {
-public:
-  Unsubscriber(Publisher& publisher)
-  : publisher_(publisher)
-  {}
-
 private:
+  explicit Unsubscriber(Publisher& publisher);
   void remove_subscriber(Subscriber*); 
   Publisher& publisher_;
 
   friend class Subscription;
-};
-
-class Subscriber {
-public:
-  virtual ~Subscriber() = default;
-  /** Notification that on object being subscribed to has changed. */
-  virtual void on_update() = 0;
+  friend class Publisher;
 };
 
 class Publisher
@@ -81,20 +74,15 @@ private:
 
 class UpdateCounter : public Subscriber {
 private:
-  int updates_ = 0;
   Subscription subscription_;
+  int* updates_;
   
 public:
-  UpdateCounter(Publisher* publisher) 
-  : subscription_(publisher->add_subscriber(this))
-  {
-  }
-
-
+  UpdateCounter(Publisher* publisher, int* updates);
   ~UpdateCounter() override = default;
 
   void on_update() override {
-    updates_++;
+    (*updates_)++;
   }
 };
 

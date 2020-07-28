@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include "limits.hpp"
 
 namespace marcpawl::legacy {
 
@@ -13,10 +14,7 @@ public:
 class Publisher
 {
 public:
-  Publisher() 
-  {
-    subscribers_.reserve(1024);
-  }
+  Publisher();
 
   /** Start sending notifications when the object has changed in 
     * the future. {@link #remove_subscriber(Subscriber*)} must
@@ -39,30 +37,16 @@ private:
 
 class UpdateCounter : public Subscriber {
 private:
-  int updates_ = 0;
   Publisher* publisher_ = nullptr;
+  int* const updates_;
 
-  //void* padding1_;
-  //void* padding2_;
-  
 public:
-  UpdateCounter(Publisher* publisher) 
-  : publisher_(publisher)
+  UpdateCounter(Publisher* publisher, int* updates);
+  ~UpdateCounter() override;
+
+  void on_update() override
   {
-    if (publisher_ != nullptr) {
-      publisher_->add_subscriber(this);
-    }
-  }
-
-
-  ~UpdateCounter() override {
-    if (publisher_ != nullptr) {
-      publisher_->remove_subscriber(this);
-    }
-  }
-
-  void on_update() override {
-    updates_++;
+    (*updates_)++;
   }
 };
 
