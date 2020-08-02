@@ -1,11 +1,10 @@
 #include <benchmark/benchmark.h>
 
+#include <cassert>
 #include <memory>
 #include <vector>
 
-#include "cadr.hpp"
 #include "legacy.hpp"
-#include "weak.hpp"
 
 template <typename Subscriber, typename Publisher>
 static std::array<std::unique_ptr<Subscriber>, nb_counters> create_subscribers(
@@ -20,61 +19,103 @@ static std::array<std::unique_ptr<Subscriber>, nb_counters> create_subscribers(
 }
 
 template <typename Subscriber, typename Publisher>
-static void subscribe(benchmark::State& state) {
-  int updates = 0;
-  Publisher publisher;
+static void benchmark_create(benchmark::State& state) {
   for (auto _ : state) {
-    create_subscribers<Subscriber, Publisher>(publisher, &updates);
+    int updates = 0;
+    Publisher publisher;
+    create_subscribers<Subscriber,Publisher>(publisher, &updates);
   }
 }
 
 template <typename Subscriber, typename Publisher>
-static void update(benchmark::State& state) {
+static void benchmark_destruct(benchmark::State& state) {
+  state.PauseTiming();
+  for (auto _ : state) {
+    state.PauseTiming();
+    int updates = 0;
+    Publisher publisher;
+    auto subscribers = create_subscribers<Subscriber,Publisher>(publisher, &updates);
+    assert(subscribers.size() == nb_counters);
+    state.ResumeTiming();
+  }
+}
+
+template <typename Subscriber, typename Publisher>
+static void benchmark_subscribe(benchmark::State& state) {
+  state.PauseTiming();
+  int updates = 0;
+  for (auto _ : state) {
+    state.PauseTiming();
+    Publisher publisher;
+    auto subscribers = create_subscribers<Subscriber, Publisher>(publisher, &updates);
+    state.ResumeTiming();
+    std::for_each(std::begin(subscribers), std::end(subscribers), 
+[](auto& subscriber) { subscriber->start(); } );
+    state.PauseTiming();
+  }
+}
+
+template <typename Subscriber, typename Publisher>
+static void benchmark_unsubscribe(benchmark::State& state) {
+  state.PauseTiming();
+  int updates = 0;
+  for (auto _ : state) {
+    state.PauseTiming();
+    Publisher publisher;
+    auto subscribers = create_subscribers<Subscriber, Publisher>(publisher, &updates);
+    std::for_each(std::begin(subscribers), std::end(subscribers), 
+[](auto& subscriber) { subscriber->start(); } );
+    state.ResumeTiming();
+    std::for_each(std::begin(subscribers), std::end(subscribers), 
+[](auto& subscriber) { subscriber->stop(); } );
+    state.PauseTiming();
+  }
+}
+
+template <typename Subscriber, typename Publisher>
+static void benchmark_update(benchmark::State& state) {
   int updates = 0;
   Publisher publisher;
-  create_subscribers<Subscriber, Publisher>(publisher, &updates);
+  auto subscribers = create_subscribers<Subscriber, Publisher>(publisher, &updates);
 
   for (auto _ : state) {
-    publisher.send_updates();
+    publisher.update();
   }
+  assert(updates > 0);
+}
+
+static void legacy_create(benchmark::State& state) {
+  using namespace marcpawl::legacy;
+  benchmark_create<Counter, Publisher>(state);
+}
+
+static void legacy_destruct(benchmark::State& state) {
+  using namespace marcpawl::legacy;
+  benchmark_destruct<Counter, Publisher>(state);
 }
 
 static void legacy_subscribe(benchmark::State& state) {
   using namespace marcpawl::legacy;
-  subscribe<UpdateCounter, Publisher>(state);
+  benchmark_subscribe<Counter, Publisher>(state);
 }
 
-static void cadr_subscribe(benchmark::State& state) {
-  using namespace marcpawl::cadr;
-  subscribe<UpdateCounter, Publisher>(state);
-}
-
-static void weak_subscribe(benchmark::State& state) {
-  using namespace marcpawl::weak;
-  subscribe<UpdateCounter, Publisher>(state);
+static void legacy_unsubscribe(benchmark::State& state) {
+  using namespace marcpawl::legacy;
+  benchmark_unsubscribe<Counter, Publisher>(state);
 }
 
 static void legacy_update(benchmark::State& state) {
   using namespace marcpawl::legacy;
-  update<UpdateCounter, Publisher>(state);
+  benchmark_update<Counter, Publisher>(state);
 }
 
-static void cadr_update(benchmark::State& state) {
-  using namespace marcpawl::cadr;
-  update<UpdateCounter, Publisher>(state);
-}
-
-static void weak_update(benchmark::State& state) {
-  using namespace marcpawl::weak;
-  update<UpdateCounter, Publisher>(state);
-}
 
 // Register the function as a benchmark
+BENCHMARK(legacy_create);  // NOLINT (cert-err58-cpp)
+BENCHMARK(legacy_destruct);  // NOLINT (cert-err58-cpp)
 BENCHMARK(legacy_subscribe);  // NOLINT (cert-err58-cpp)
+BENCHMARK(legacy_unsubscribe);  // NOLINT (cert-err58-cpp)
 BENCHMARK(legacy_update);     // NOLINT (cert-err58-cpp)
-BENCHMARK(cadr_subscribe);    // NOLINT (cert-err58-cpp)
-BENCHMARK(cadr_update);       // NOLINT (cert-err58-cpp)
-BENCHMARK(weak_subscribe);    // NOLINT (cert-err58-cpp)
-BENCHMARK(weak_update);       // NOLINT (cert-err58-cpp)
+
 // Run the benchmark
 BENCHMARK_MAIN();

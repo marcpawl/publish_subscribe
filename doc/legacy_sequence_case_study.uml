@@ -1,0 +1,15 @@
+@startuml
+actor agent
+participant publisher
+participant counter
+
+== subscribe ==
+counter -> publisher  : subscribe(counter)
+== update ==
+agent -> publisher : update()
+activate publisher
+publisher -> counter : on_update()
+deactivate publisher
+== unsubscribe ==
+counter -> publisher  : unsubscribe(counter)
+@enduml

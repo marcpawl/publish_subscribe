@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.15)
 
 # Set the project name to your project name, my project isn't very descriptive
 project(myproject CXX)
-set(BENCHMARK_DIR /home/marcpawl/.conan/data/benchmark/1.5.0/_/_/build/10402ff4e4348155b5eee65f407b9f90f040f9a5/build_subfolder/source_subfolder/src/generated/)
 include(cmake/StandardProjectSettings.cmake)
 include(cmake/PreventInSourceBuilds.cmake)
 
@@ -61,6 +60,8 @@ endif()
 set(CONAN_EXTRA_REQUIRES "")
 set(CONAN_EXTRA_OPTIONS "")
 
+set(CONAN_EXTRA_REQUIRES ${CONAN_EXTRA_REQUIRES} benchmark/1.5.0)
+
 if(CPP_STARTER_USE_IMGUI)
   set(CONAN_EXTRA_REQUIRES ${CONAN_EXTRA_REQUIRES} imgui-sfml/2.1@bincrafters/stable)
 
@@ -92,5 +93,5 @@ add_subdirectory(src)
 option(ENABLE_UNITY "Enable Unity builds of projects" OFF)
 if(ENABLE_UNITY)
   # Add for any project you want to apply unity builds for
-  set_target_properties(intro PROPERTIES UNITY_BUILD ON)
+  set_target_properties(pubsub PROPERTIES UNITY_BUILD ON)
 endif()

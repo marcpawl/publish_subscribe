@@ -15,35 +15,51 @@ class Subscriber {
 class Publisher {
  public:
   Publisher();
+  Publisher(Publisher const&) = delete;
+  Publisher(Publisher &&) = default;
+  ~Publisher() = default;
+  Publisher& operator=(Publisher const&) = delete;
+  Publisher& operator=(Publisher &&) = default;
 
   /** Start sending notifications when the object has changed in
    * the future. {@link #remove_subscriber(Subscriber*)} must
    * be called prior to the subscriber being deleted.
    * @param subscriber Object that will receive the notifications.
    */
-  void add_subscriber(Subscriber* subscriber);
+  void subscribe(Subscriber* subscriber) noexcept;
 
   /** Stop sending notifications about object updates.
    * @param subscriber Object that will no longer receive notifications. */
-  void remove_subscriber(Subscriber* subscriber);
+  void unsubscribe(Subscriber* subscriber) noexcept;
 
   /** Send notifaction of an update to all the subscribers. */
-  void send_updates();
+  void update();
+
+  /** @return Number of subscribers. */
+  size_t size() const noexcept;
 
  private:
   std::vector<Subscriber*> subscribers_;
 };
 
-class UpdateCounter : public Subscriber {
+class Counter : public Subscriber {
  private:
   Publisher* publisher_ = nullptr;
+  bool counting_ = false;
   int* const updates_;
 
  public:
-  UpdateCounter(Publisher* publisher, int* updates);
-  ~UpdateCounter() override;
+  Counter(Publisher* publisher, int* updates);
+  Counter(Counter const&) = delete;
+  Counter(Counter &&) = default;
+  ~Counter() override;
+  Counter& operator=(Counter const&) = delete;
+  Counter& operator=(Counter &&) = default;
 
-  void on_update() override { (*updates_)++; }
+  void on_update() override;
+
+  void start();
+  void stop();
 };
 
 }  // namespace marcpawl::legacy

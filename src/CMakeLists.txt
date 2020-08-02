@@ -5,6 +5,7 @@ option(CPP_STARTER_USE_IMGUI "Enable compilation of ImGui sample" OFF)
 option(CPP_STARTER_USE_NANA "Enable compilation of Nana GUI sample" OFF)
 option(CPP_STARTER_USE_SDL "Enable compilation of SDL sample" OFF)
 
+
 # sdl
 if(CPP_STARTER_USE_SDL)
   message("Using SDL2")
@@ -41,18 +42,14 @@ if(CPP_STARTER_USE_NANA)
   add_subdirectory(nana)
 endif()
 
-find_package(benchmark)
-include_directories(${BENCHMARK_INCLUDE_DIRS})
-set(LIBS ${LIBS} ${BENCHMARK_LIBRARIES})
-
 
 # Generic test that uses conan libs
-add_executable(intro main.cpp legacy.cpp cadr.cpp weak.cpp)
+add_executable(pubsub main.cpp legacy.cpp)
 target_link_libraries(
-  intro
+  pubsub
   PUBLIC
   ${LIBS}
-  benchmark::benchmark
+  ${CONAN_LIBS_BENCHMARK}
   PRIVATE project_options
           project_warnings
           )

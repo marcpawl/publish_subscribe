@@ -5,32 +5,52 @@
 
 namespace marcpawl::legacy {
 
-UpdateCounter::UpdateCounter(Publisher* publisher, int* updates)
+Counter::Counter(Publisher* publisher, int* updates)
     : publisher_(publisher), updates_(updates) {
-  if (publisher_ != nullptr) {
-    publisher_->add_subscriber(this);
+}
+
+Counter::~Counter() {
+  if (counting_) {
+    publisher_->unsubscribe(this);
   }
 }
 
-UpdateCounter::~UpdateCounter() {
-  if (publisher_ != nullptr) {
-    publisher_->remove_subscriber(this);
+void Counter::on_update()  { (*updates_)++; }
+
+void Counter::start()
+{
+  if (! counting_) {
+    publisher_->subscribe(this);
+    counting_ = true;
   }
 }
+
+
+void Counter::stop()
+{
+  if (! counting_) {
+    publisher_->subscribe(this);
+    counting_ = true;
+  }
+}
+
+
 
 Publisher::Publisher() { subscribers_.reserve(reserved); }
 
-void Publisher::add_subscriber(Subscriber* subscriber) {
+size_t Publisher::size() const noexcept { return subscribers_.size();}
+
+void Publisher::subscribe(Subscriber* subscriber) noexcept {
   subscribers_.push_back(subscriber);
 }
 
-void Publisher::remove_subscriber(Subscriber* subscriber) {
+void Publisher::unsubscribe(Subscriber* subscriber) noexcept {
   auto new_end =
       std::remove(std::begin(subscribers_), std::end(subscribers_), subscriber);
   subscribers_.erase(new_end, std::end(subscribers_));
 }
 
-void Publisher::send_updates() {
+void Publisher::update() {
   std::for_each(std::begin(subscribers_), std::end(subscribers_),
                 [](Subscriber* subscriber) { subscriber->on_update(); });
 }

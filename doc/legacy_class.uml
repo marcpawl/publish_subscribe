@@ -1,0 +1,5 @@
+@startuml
+abstract class Subscriber 
+Subscriber <|-- counter
+Publisher *- Subscriber : notifies
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+actor agent
+participant publisher
+participant subscriber1
+participant subscriber2
+
+== subscribe ==
+subscriber1 -> publisher  : subscribe(subscriber1)
+subscriber2 -> publisher  : subscribe(subscriber2)
+== update ==
+agent -> publisher : update()
+activate publisher
+publisher -> subscriber1 : on_update()
+activate subscriber1
+subscriber1 -> publisher : get_state()
+deactivate subscriber1
+publisher -> subscriber2 : on_update()
+activate subscriber2
+subscriber2 -> publisher : get_state()
+deactivate subscriber2
+deactivate publisher
+== unsubscribe ==
+subscriber1 -> publisher  : unsubscribe(subscriber1)
+subscriber2 -> publisher  : unsubscribe(subscriber2)
+@enduml
