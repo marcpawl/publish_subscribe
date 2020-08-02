@@ -23,7 +23,7 @@ static void benchmark_create(benchmark::State& state) {
   for (auto _ : state) {
     int updates = 0;
     Publisher publisher;
-    create_subscribers<Subscriber,Publisher>(publisher, &updates);
+    create_subscribers<Subscriber, Publisher>(publisher, &updates);
   }
 }
 
@@ -34,7 +34,8 @@ static void benchmark_destruct(benchmark::State& state) {
     state.PauseTiming();
     int updates = 0;
     Publisher publisher;
-    auto subscribers = create_subscribers<Subscriber,Publisher>(publisher, &updates);
+    auto subscribers =
+        create_subscribers<Subscriber, Publisher>(publisher, &updates);
     assert(subscribers.size() == nb_counters);
     state.ResumeTiming();
   }
@@ -47,10 +48,11 @@ static void benchmark_subscribe(benchmark::State& state) {
   for (auto _ : state) {
     state.PauseTiming();
     Publisher publisher;
-    auto subscribers = create_subscribers<Subscriber, Publisher>(publisher, &updates);
+    auto subscribers =
+        create_subscribers<Subscriber, Publisher>(publisher, &updates);
     state.ResumeTiming();
-    std::for_each(std::begin(subscribers), std::end(subscribers), 
-[](auto& subscriber) { subscriber->start(); } );
+    std::for_each(std::begin(subscribers), std::end(subscribers),
+                  [](auto& subscriber) { subscriber->start(); });
     state.PauseTiming();
   }
 }
@@ -62,12 +64,13 @@ static void benchmark_unsubscribe(benchmark::State& state) {
   for (auto _ : state) {
     state.PauseTiming();
     Publisher publisher;
-    auto subscribers = create_subscribers<Subscriber, Publisher>(publisher, &updates);
-    std::for_each(std::begin(subscribers), std::end(subscribers), 
-[](auto& subscriber) { subscriber->start(); } );
+    auto subscribers =
+        create_subscribers<Subscriber, Publisher>(publisher, &updates);
+    std::for_each(std::begin(subscribers), std::end(subscribers),
+                  [](auto& subscriber) { subscriber->start(); });
     state.ResumeTiming();
-    std::for_each(std::begin(subscribers), std::end(subscribers), 
-[](auto& subscriber) { subscriber->stop(); } );
+    std::for_each(std::begin(subscribers), std::end(subscribers),
+                  [](auto& subscriber) { subscriber->stop(); });
     state.PauseTiming();
   }
 }
@@ -76,7 +79,8 @@ template <typename Subscriber, typename Publisher>
 static void benchmark_update(benchmark::State& state) {
   int updates = 0;
   Publisher publisher;
-  auto subscribers = create_subscribers<Subscriber, Publisher>(publisher, &updates);
+  auto subscribers =
+      create_subscribers<Subscriber, Publisher>(publisher, &updates);
 
   for (auto _ : state) {
     publisher.update();
@@ -109,13 +113,12 @@ static void legacy_update(benchmark::State& state) {
   benchmark_update<Counter, Publisher>(state);
 }
 
-
 // Register the function as a benchmark
-BENCHMARK(legacy_create);  // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_destruct);  // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_subscribe);  // NOLINT (cert-err58-cpp)
+BENCHMARK(legacy_create);       // NOLINT (cert-err58-cpp)
+BENCHMARK(legacy_destruct);     // NOLINT (cert-err58-cpp)
+BENCHMARK(legacy_subscribe);    // NOLINT (cert-err58-cpp)
 BENCHMARK(legacy_unsubscribe);  // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_update);     // NOLINT (cert-err58-cpp)
+BENCHMARK(legacy_update);       // NOLINT (cert-err58-cpp)
 
 // Run the benchmark
 BENCHMARK_MAIN();

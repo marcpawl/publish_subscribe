@@ -16,10 +16,10 @@ class Publisher {
  public:
   Publisher();
   Publisher(Publisher const&) = delete;
-  Publisher(Publisher &&) = default;
+  Publisher(Publisher&&) = default;
   ~Publisher() = default;
   Publisher& operator=(Publisher const&) = delete;
-  Publisher& operator=(Publisher &&) = default;
+  Publisher& operator=(Publisher&&) = default;
 
   /** Start sending notifications when the object has changed in
    * the future. {@link #remove_subscriber(Subscriber*)} must
@@ -51,10 +51,10 @@ class Counter : public Subscriber {
  public:
   Counter(Publisher* publisher, int* updates);
   Counter(Counter const&) = delete;
-  Counter(Counter &&) = default;
+  Counter(Counter&&) = default;
   ~Counter() override;
   Counter& operator=(Counter const&) = delete;
-  Counter& operator=(Counter &&) = default;
+  Counter& operator=(Counter&&) = default;
 
   void on_update() override;
 
