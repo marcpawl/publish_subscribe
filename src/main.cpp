@@ -5,6 +5,8 @@
 #include <vector>
 
 #include "legacy.hpp"
+#include "subscription.hpp"
+#include "weak.hpp"
 
 template <typename Subscriber, typename Publisher>
 static std::array<std::unique_ptr<Subscriber>, nb_counters> create_subscribers(
@@ -88,37 +90,99 @@ static void benchmark_update(benchmark::State& state) {
   assert(updates > 0);
 }
 
-static void legacy_create(benchmark::State& state) {
+static void A_create_legacy(benchmark::State& state) {
   using namespace marcpawl::legacy;
   benchmark_create<Counter, Publisher>(state);
 }
 
-static void legacy_destruct(benchmark::State& state) {
+static void B_destruct_legacy(benchmark::State& state) {
   using namespace marcpawl::legacy;
   benchmark_destruct<Counter, Publisher>(state);
 }
 
-static void legacy_subscribe(benchmark::State& state) {
+static void C_subscribe_legacy(benchmark::State& state) {
   using namespace marcpawl::legacy;
   benchmark_subscribe<Counter, Publisher>(state);
 }
 
-static void legacy_unsubscribe(benchmark::State& state) {
+static void D_unsubscribe_legacy(benchmark::State& state) {
   using namespace marcpawl::legacy;
   benchmark_unsubscribe<Counter, Publisher>(state);
 }
 
-static void legacy_update(benchmark::State& state) {
+static void E_update_legacy(benchmark::State& state) {
   using namespace marcpawl::legacy;
   benchmark_update<Counter, Publisher>(state);
 }
 
+static void A_create_subscription(benchmark::State& state) {
+  using namespace marcpawl::subscription;
+  benchmark_create<Counter, Publisher>(state);
+}
+
+static void B_destruct_subscription(benchmark::State& state) {
+  using namespace marcpawl::subscription;
+  benchmark_destruct<Counter, Publisher>(state);
+}
+
+static void C_subscribe_subscription(benchmark::State& state) {
+  using namespace marcpawl::subscription;
+  benchmark_subscribe<Counter, Publisher>(state);
+}
+
+static void D_unsubscribe_subscription(benchmark::State& state) {
+  using namespace marcpawl::subscription;
+  benchmark_unsubscribe<Counter, Publisher>(state);
+}
+
+static void E_update_subscription(benchmark::State& state) {
+  using namespace marcpawl::subscription;
+  benchmark_update<Counter, Publisher>(state);
+}
+
+static void A_create_weak(benchmark::State& state) {
+  using namespace marcpawl::weak;
+  benchmark_create<Counter, Publisher>(state);
+}
+
+static void B_destruct_weak(benchmark::State& state) {
+  using namespace marcpawl::weak;
+  benchmark_destruct<Counter, Publisher>(state);
+}
+
+static void C_subscribe_weak(benchmark::State& state) {
+  using namespace marcpawl::weak;
+  benchmark_subscribe<Counter, Publisher>(state);
+}
+
+static void D_unsubscribe_weak(benchmark::State& state) {
+  using namespace marcpawl::weak;
+  benchmark_unsubscribe<Counter, Publisher>(state);
+}
+
+static void E_update_weak(benchmark::State& state) {
+  using namespace marcpawl::weak;
+  benchmark_update<Counter, Publisher>(state);
+}
+
 // Register the function as a benchmark
-BENCHMARK(legacy_create);       // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_destruct);     // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_subscribe);    // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_unsubscribe);  // NOLINT (cert-err58-cpp)
-BENCHMARK(legacy_update);       // NOLINT (cert-err58-cpp)
+BENCHMARK(A_create_legacy);       // NOLINT (cert-err58-cpp)
+BENCHMARK(B_destruct_legacy);     // NOLINT (cert-err58-cpp)
+BENCHMARK(C_subscribe_legacy);    // NOLINT (cert-err58-cpp)
+BENCHMARK(D_unsubscribe_legacy);  // NOLINT (cert-err58-cpp)
+BENCHMARK(E_update_legacy);       // NOLINT (cert-err58-cpp)
+
+BENCHMARK(A_create_subscription);       // NOLINT (cert-err58-cpp)
+BENCHMARK(B_destruct_subscription);     // NOLINT (cert-err58-cpp)
+BENCHMARK(C_subscribe_subscription);    // NOLINT (cert-err58-cpp)
+BENCHMARK(D_unsubscribe_subscription);  // NOLINT (cert-err58-cpp)
+BENCHMARK(E_update_subscription);       // NOLINT (cert-err58-cpp)
+
+BENCHMARK(A_create_weak);       // NOLINT (cert-err58-cpp)
+BENCHMARK(B_destruct_weak);     // NOLINT (cert-err58-cpp)
+BENCHMARK(C_subscribe_weak);    // NOLINT (cert-err58-cpp)
+BENCHMARK(D_unsubscribe_weak);  // NOLINT (cert-err58-cpp)
+BENCHMARK(E_update_weak);       // NOLINT (cert-err58-cpp)
 
 // Run the benchmark
 BENCHMARK_MAIN();

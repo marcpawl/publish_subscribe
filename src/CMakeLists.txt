@@ -44,7 +44,7 @@ endif()
 
 
 # Generic test that uses conan libs
-add_executable(pubsub main.cpp legacy.cpp)
+add_executable(pubsub main.cpp legacy.cpp subscription.cpp weak.cpp)
 target_link_libraries(
   pubsub
   PUBLIC
@@ -52,6 +52,6 @@ target_link_libraries(
   ${CONAN_LIBS_BENCHMARK}
   PRIVATE project_options
           project_warnings
-          )
+  )
 
 

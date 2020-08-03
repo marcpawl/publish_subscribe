@@ -1,0 +1,9 @@
+@startuml
+abstract class Subscriber 
+Subscriber <|-- Counter
+Publisher *-- Unsubscriber: shared_ptr
+Subscription *-- Unsubscriber: weak_ptr
+Publisher - Subscriber : notifies
+Publisher -- Subscription : creates
+Subscription -* Counter: owns
+@enduml
