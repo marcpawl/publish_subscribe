@@ -15,19 +15,18 @@ class Subscriber {
 };
 
 class Subscription {
-  private:
-    Publisher* publisher_;
-    Subscriber* subscriber_;
-    
-    Subscription(Publisher* publisher, Subscriber* subscriber);
+ private:
+  Publisher* publisher_;
+  Subscriber* subscriber_;
 
-  public:
-    Subscription(Subscription const&) = delete;
-    Subscription(Subscription &&) = default;
-    ~Subscription();
-    Subscription& operator=(Subscription const&) = delete;
-    Subscription& operator=(Subscription &&) = default;
-    
+  Subscription(Publisher* publisher, Subscriber* subscriber);
+
+ public:
+  Subscription(Subscription const&) = delete;
+  Subscription(Subscription&&);
+  ~Subscription();
+  Subscription& operator=(Subscription const&) = delete;
+  Subscription& operator=(Subscription&&);
 
   friend class Publisher;
 };
@@ -42,19 +41,19 @@ class Publisher {
   Publisher& operator=(Publisher&&) = default;
 
   /** Start sending notifications when the object has changed in
-   * the future. 
+   * the future.
    * @param subscriber Object that will receive the notifications.
    * As long as the subscription exists then the subscriber will
    * be notified.
    */
   Subscription subscribe(Subscriber* subscriber) noexcept;
 
-private:
+ private:
   /** Stop sending notifications about object updates.
    * @param subscriber Object that will no longer receive notifications. */
   void unsubscribe(Subscriber* subscriber) noexcept;
 
-public:
+ public:
   /** Send notifaction of an update to all the subscribers. */
   void update();
 
@@ -68,7 +67,7 @@ public:
 
 class Counter : public Subscriber {
  private:
-  Publisher* const publisher_ ;
+  Publisher* const publisher_;
   std::optional<Subscription> subscription_;
   int* const updates_;
 
@@ -86,4 +85,4 @@ class Counter : public Subscriber {
   void stop();
 };
 
-}  // namespace marcpawl::legacy
+}  // namespace marcpawl::subscription

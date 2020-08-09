@@ -9,25 +9,33 @@ namespace marcpawl::subscription {
 Counter::Counter(Publisher* publisher, int* updates)
     : publisher_(publisher), updates_(updates) {}
 
-
 void Counter::on_update() { (*updates_)++; }
 
-void Counter::start() {
-  subscription_ = std::move(publisher_->subscribe(this));
-}
+void Counter::start() { subscription_ = publisher_->subscribe(this); }
 
-void Counter::stop() {
-  subscription_.reset();
-}
+void Counter::stop() { subscription_.reset(); }
 
 Subscription::Subscription(Publisher* publisher, Subscriber* subscriber)
-: publisher_(publisher)
-, subscriber_(subscriber)
-{}
+    : publisher_(publisher), subscriber_(subscriber) {}
 
-Subscription::~Subscription()
-{
-  publisher_->unsubscribe(subscriber_);
+Subscription::Subscription(Subscription&& other)
+    : publisher_(other.publisher_), subscriber_(other.subscriber_) {
+  other.publisher_ = nullptr;
+  other.subscriber_ = nullptr;
+}
+
+Subscription::~Subscription() {
+  if (nullptr != publisher_) {
+    publisher_->unsubscribe(subscriber_);
+  }
+}
+
+Subscription& Subscription::operator=(Subscription&& other) {
+  publisher_ = other.publisher_;
+  subscriber_ = other.subscriber_;
+  other.publisher_ = nullptr;
+  other.subscriber_ = nullptr;
+  return *this;
 }
 
 Publisher::Publisher() { subscribers_.reserve(reserved); }
@@ -50,4 +58,4 @@ void Publisher::update() {
                 [](Subscriber* subscriber) { subscriber->on_update(); });
 }
 
-}  // namespace marcpawl::legacy
+}  // namespace marcpawl::subscription

@@ -24,7 +24,6 @@ void Publisher::Unsubscriber::unsubscribe(Subscriber* subscriber) {
   publisher_->unsubscribe(subscriber);
 }
 
-
 Subscription::Subscription(std::weak_ptr<Publisher::Unsubscriber> unsubscriber,
                            Subscriber* subscriber)
     : unsubscriber_(std::move(unsubscriber)), subscriber_(subscriber) {}
