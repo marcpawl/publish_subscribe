@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Benchmark,Time,CPU,Iterations" > stats.csv
+echo "Benchmark,variant,Time,CPU,Iterations" > stats.csv
 for i in 1 2 3 4 5
 do
- cat stats.${i}.txt | sed -e '1,12d;s/  */ /g;/_mean /d;/_median /d;/_stddev /d' | awk '{printf("%s,%s,%s,%s\n", $1,$2,$4,$6);}' >> stats.csv
+ cat stats.${i}.txt | sed -e '1,12d;s/  */ /g;/_mean /d;/_median /d;/_stddev /d;s/\(.*\)_\([^ _]*\)/\1 \2/' | awk '{printf("%s,%s,%s,%s\n", $1,$2,$4,$6);}' >> stats.csv
 done
