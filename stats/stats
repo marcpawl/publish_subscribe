@@ -1,0 +1,5 @@
+#!/bin/bash -ex
+for trial in 1 2 3 4 5
+do
+ ../release/bin/pubsub --benchmark_out=stats.${trial}.txt --benchmark_out_format=console --benchmark_repetitions=50
+done
