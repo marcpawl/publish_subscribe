@@ -1,0 +1,9 @@
+#!/bin/bash -e
+echo UID=$(id -u)>.env
+echo USER=$(id -u -n) >>.env
+echo GID=$(id -g)>>.env
+echo GROUP=$(id -g -n)>>.env
+docker-compose build 
+docker-compose up -d
+#docker exec -it compile /bin/bash
+

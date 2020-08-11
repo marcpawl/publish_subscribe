@@ -1,0 +1,46 @@
+FROM fedora:32
+RUN \
+  rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
+  echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo 
+RUN  dnf -y update && dnf  -y check-update 
+RUN  dnf install -y code
+RUN dnf install -y \
+  ccache \
+  clang \
+  cmake \
+  cmake-gui \
+  cppcheck \
+  findutils \
+  git \
+  google-benchmark-devel \
+  make  \
+  ninja-build \
+  neovim \
+  python3-pip \
+  xterm
+RUN  pip install conan
+RUN dnf install -y \
+  passwd  which meld openssh-server
+RUN dnf install -y \
+  x2goserver
+RUN cd /etc/ssh && ssh-keygen -A
+RUN ( \
+    echo 'LogLevel DEBUG2'; \
+    echo 'PermitRootLogin yes'; \
+    echo 'PasswordAuthentication yes'; \
+    echo 'Subsystem sftp /usr/libexec/openssh/sftp-server'; \
+    echo 'X11Forwarding yes'; \
+  ) > /etc/ssh/sshd_config_test_clion
+RUN dnf install -y gdb
+ARG USER
+RUN useradd -M ${USER} && yes password | passwd ${USER}
+RUN mkdir -p /git_credentials
+RUN mkdir -p /pubsub
+RUN chown ${USER}:${USER} /pubsub
+RUN chown ${USER}:${USER} /git_credentials
+
+WORKDIR pubsub
+#USER ${USER}
+CMD ["/usr/sbin/sshd", "-D", "-e", "-f", "/etc/ssh/sshd_config_test_clion"]
+#CMD sleep 3600000
+

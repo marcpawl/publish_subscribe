@@ -1,0 +1,30 @@
+version: "3.8"
+
+volumes: 
+  pubsub:
+  git_credentials_github:
+  home:
+
+services:
+  compile:
+    container_name:  compile
+    hostname: compile
+    build:
+      context: .
+      dockerfile: Dockerfile.compile
+      args:
+        USER: ${USER}
+    volumes:
+      - pubsub:/pubsub
+      - git_credentials_github:/git_credentials
+      - home:/home/${USER}
+    environment:
+      DISPLAY: "host.docker.internal:0"
+    ports:
+      - "2222:22"
+    cap_add:
+      - sys_ptrace
+
+ 
+
+
