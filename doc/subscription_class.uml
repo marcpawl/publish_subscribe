@@ -1,7 +1,33 @@
 @startuml
-abstract class Subscriber 
-Subscriber <|-- Counter
-Publisher - Subscriber : notifies
-Publisher -- Subscription : creates
-Subscription -* Counter: owns
+left to right direction
+interface Subscriber
+class Counter
+class Publisher
+class Subscription
+Subscriber <|- Counter
+Publisher .. Subscriber : notifies >
+Counter .. Publisher : subscribes to >
+Publisher .. Subscription : creates >
+Subscription .. Publisher : unsubscribes from >
+Counter *-- Subscription
+Agent .. Subscriber: starts/stops >
+class Publisher {
+{method} +subscribe(Subscriber}:Subscription
+{method} +unsubscribe{Subscriber}
+{field} -vector<subscribers>
+}
+interface Subscriber {
+{method} +start(}=0
+{method} +stop(}=0
+}
+class Counter {
+{field} -publisher
+{field} -subscription
+{method} +start(}
+{method} +stop(}
+}
+class Subscription {
+{field} -publisher
+{field} -subscriber
+}
 @enduml
