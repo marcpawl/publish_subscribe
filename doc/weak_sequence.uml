@@ -1,0 +1,20 @@
+@startuml
+actor agent
+participant subscriber1
+participant subscription1
+participant unsubscriber
+participant publisher
+
+== unsubscribe ==
+agent -> subscriber1 : stop()
+activate subscriber1
+subscriber1 -> subscription1  : destroy
+activate subscription1
+subscription1 ->unsubscriber  : unsubscribe(subscriber1)
+activate unsubscriber
+unsubscriber -> publisher : unsubscribe(subscriber1)
+deactivate unsubscriber
+deactivate subscription1
+destroy subscription1
+deactivate subscriber1
+@enduml
