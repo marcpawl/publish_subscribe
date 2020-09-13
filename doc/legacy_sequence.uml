@@ -5,8 +5,14 @@ participant subscriber1
 participant subscriber2
 
 == subscribe ==
+agent -> subscriber1 : start()
+activate subscriber1
 subscriber1 -> publisher  : subscribe(subscriber1)
+deactivate subscriber1
+agent -> subscriber2 : start()
+activate subscriber2
 subscriber2 -> publisher  : subscribe(subscriber2)
+deactivate subscriber2
 == update ==
 agent -> publisher : update()
 activate publisher
@@ -20,6 +26,12 @@ subscriber2 -> publisher : get_state()
 deactivate subscriber2
 deactivate publisher
 == unsubscribe ==
+agent -> subscriber1 : stop()
+activate subscriber1
 subscriber1 -> publisher  : unsubscribe(subscriber1)
+deactivate subscriber1
+agent -> subscriber2 : stop()
+activate subscriber2
 subscriber2 -> publisher  : unsubscribe(subscriber2)
+deactivate subscriber2
 @enduml
