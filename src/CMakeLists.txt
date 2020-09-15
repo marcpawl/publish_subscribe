@@ -42,6 +42,8 @@ if(CPP_STARTER_USE_NANA)
   add_subdirectory(nana)
 endif()
 
+set_property(GLOBAL PROPERTY CXX_STANDARD 17)
+add_compile_options("-O3")
 
 # Generic test that uses conan libs
 add_library(lpubsub  legacy.cpp subscription.cpp weak.cpp)
