@@ -10,14 +10,22 @@ Inspired by Matt Godbolt's talk at [C++ on Sea](https://www.youtube.com/watch?v=
 ## Building
 Go to the container folder and execute ./go
 
+## Directories
+
 ### container
 Docker container used to compile and execute the source.
 
 ### doc
 Slides and UML diagrams used in the slides
 
+### measure
+Execute the benchmarks, capturing the output for analysis by PANDA.
+
 ### src
 Working source code, but demo level, not production
+
+### stats
+Statistical analysis of the benchmark using PANDA.
 
 ### test
 Unit tests
