@@ -1,0 +1,27 @@
+#!/bin/bash -ex
+cd $(dirname $0)
+
+pushd ../container
+docker-compose down
+docker-compose build
+docker-compose up -d
+popd
+
+docker exec  -it compile  /pubsub/measure/compile
+
+date
+i=300
+rm -f ../stats/${i}_1_counters.txt
+docker exec  -it compile  /pubsub/build/bin/pubsub >> ../stats/${i}_1_counters.txt
+
+while [ $i -gt 200 ]
+do
+  rm -f ../stats/${i}_50_counters.txt
+  date
+  docker exec  -it compile  /pubsub/build/bin/pubsub \
+    --benchmark_repetitions=50 \
+    >> ../stats/${i}_50_counters.txt
+  i=$[$i-1]
+done
+
+date

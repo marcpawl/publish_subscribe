@@ -1,0 +1,8 @@
+#!/bin/bash -ex
+cd $(dirname $0)
+mkdir -p /pubsub/build 
+cd /pubsub/build 
+cmake3 -DCMAKE_VERBOSE_MAKEFILE=on  -G "Unix Makefiles" ..
+cmake3 --build . --target all
+echo "PASS"
+

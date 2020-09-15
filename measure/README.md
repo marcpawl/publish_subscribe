@@ -1,28 +1,12 @@
-# publish-subscribe
+# publish-subscribe/measure
 
 
 ## Purpose
-Source code, slides, ... for presentation on benchmarks when
-using an API that is Correct by Design.
+Execute the benchmarks capturing the results, in ../stats, so we can analyze them.
 
-Inspired by Matt Godbolt's talk at [C++ on Sea](https://www.youtube.com/watch?v=nLSm3Haxz0I&t=2974s)
+## How-to
 
-## Building
-Go to the container folder and execute ./go
-
-### container
-Docker container used to compile and execute the source.
-
-### doc
-Slides and UML diagrams used in the slides
-
-### src
-Working source code, but demo level, not production
-
-### stats
-Statistical analysis of the benchmark using PANDA.
-
-### test
-Unit tests
-
+- Edit ../src/main.cpp to determine the benchmark execution order.
+- Modify the file go to determine the number of repetitions.
+- ./go
 
