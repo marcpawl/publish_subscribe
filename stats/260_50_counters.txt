@@ -1,0 +1,808 @@
+2020-09-15 06:59:50
+Running /pubsub/build/bin/pubsub
+Run on (2 X 1598.82 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x2)
+  L1 Instruction 32K (x2)
+  L2 Unified 256K (x2)
+  L3 Unified 3072K (x2)
+Load Average: 1.11, 1.04, 1.01
+----------------------------------------------------------------------------
+Benchmark                                  Time             CPU   Iterations
+----------------------------------------------------------------------------
+[0;32mA_create_weak                     [m[0;33m    554420 ns       551356 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    592620 ns       590060 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547508 ns       545944 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    554901 ns       551663 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    548420 ns       546700 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544465 ns       543341 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547838 ns       546084 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545508 ns       543958 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547606 ns       546277 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545522 ns       545132 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543704 ns       543337 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543258 ns       542685 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543018 ns       542546 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544955 ns       544089 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544370 ns       543570 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544626 ns       543276 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    550398 ns       548773 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    557018 ns       551305 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    548673 ns       547247 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    565584 ns       563958 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    558012 ns       555860 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    552280 ns       550100 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    553591 ns       552164 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544972 ns       544565 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    553199 ns       550905 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544481 ns       544137 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    546424 ns       546068 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    544096 ns       543869 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    549498 ns       549230 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    546862 ns       546403 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    549102 ns       548880 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    546603 ns       546120 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543776 ns       543567 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543736 ns       543468 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547220 ns       545653 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547368 ns       546833 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    546999 ns       546454 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545195 ns       544803 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547090 ns       546920 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547322 ns       546812 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545943 ns       545676 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545169 ns       544804 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543438 ns       543123 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545629 ns       545458 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545533 ns       545185 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    543699 ns       543184 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547349 ns       546885 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    547422 ns       546892 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    546814 ns       546429 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak                     [m[0;33m    545482 ns       544940 ns   [m[0;36m      1284[m
+[m[0;32mA_create_weak_mean                [m[0;33m    548574 ns       547534 ns   [m[0;36m        50[m
+[m[0;32mA_create_weak_median              [m[0;33m    546838 ns       546076 ns   [m[0;36m        50[m
+[m[0;32mA_create_weak_stddev              [m[0;33m      7729 ns         7209 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622920408225 ns   35253928974 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622921561972 ns   35254933744 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622922282455 ns   35255655336 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622923075814 ns   35256448311 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622923890343 ns   35257262202 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622924638136 ns   35258009765 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622925370239 ns   35258741811 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622926104743 ns   35259476261 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622926952551 ns   35260324549 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622927723594 ns   35261095171 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622928412318 ns   35261783787 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622929053713 ns   35262424279 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622929754703 ns   35263125344 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622930294592 ns   35263665567 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622930903528 ns   35264274786 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622931536353 ns   35264907918 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622932060974 ns   35265431862 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622932600880 ns   35265971817 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622933212462 ns   35266584740 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622933736334 ns   35267107904 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622934305984 ns   35267678340 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622934829685 ns   35268201270 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622935352576 ns   35268723598 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622935920078 ns   35269291629 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622936442812 ns   35269813687 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622937009002 ns   35270380548 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622937531855 ns   35270902725 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622938138921 ns   35271511292 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622938662902 ns   35272034411 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622939226454 ns   35272598762 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622939749793 ns   35273121278 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622940313583 ns   35273685918 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622940837277 ns   35274208757 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622941377902 ns   35274749094 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622941962359 ns   35275334780 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622942488219 ns   35275859057 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622943057089 ns   35276428710 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622943628587 ns   35277000847 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622944195235 ns   35277567707 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622944719921 ns   35278091414 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622945283902 ns   35278656252 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622945808177 ns   35279179683 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622946330917 ns   35279701980 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622946896123 ns   35280267695 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622947483292 ns   35280823922 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622948093917 ns   35281435050 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622948618049 ns   35281958455 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622949180700 ns   35282521783 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622949704145 ns   35283044533 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak                   [m[0;33m16622950268600 ns   35283609749 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_weak_mean              [m[0;33m16622936419840 ns   35269790741 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_weak_median            [m[0;33m16622936725907 ns   35270097118 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_weak_stddev            [m[0;33m   8521758 ns      8503639 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16622963753408 ns   35296425624 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16622976159703 ns   35308622743 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16622988110102 ns   35320529506 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16622999982484 ns   35332401201 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623011918775 ns   35344337112 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623023805258 ns   35356223849 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623035821029 ns   35368241481 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623047665029 ns   35380084738 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623059535543 ns   35391955338 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623071473245 ns   35403893499 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623083369972 ns   35415789727 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623095274763 ns   35427694430 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623107128482 ns   35439548285 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623118968241 ns   35451386480 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623130979179 ns   35463398157 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623142858403 ns   35475276818 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623154842440 ns   35487262973 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623166852022 ns   35499272501 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623178823375 ns   35511243801 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623190868676 ns   35523290532 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623202973318 ns   35535394099 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623215008779 ns   35547429258 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623226905657 ns   35559324311 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623238929468 ns   35571348129 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623251140588 ns   35583560232 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623263160690 ns   35595581416 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623275116113 ns   35607534550 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623287114156 ns   35619532282 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623299078041 ns   35631496360 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623311088389 ns   35643506628 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623326019005 ns   35658178214 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623338092481 ns   35670249986 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623350102894 ns   35682259981 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623362009426 ns   35694166563 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623373921507 ns   35706078761 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623385893843 ns   35718051299 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623397854788 ns   35730014062 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623409747354 ns   35741906576 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623421641436 ns   35753799950 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623433536663 ns   35765695202 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623445430000 ns   35777589600 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623457349406 ns   35789507834 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623469771508 ns   35801838833 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623481668364 ns   35813733435 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623493610175 ns   35825675645 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623505542106 ns   35837607762 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623517457450 ns   35849522799 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623529300735 ns   35861366271 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623541175642 ns   35873241475 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak                  [m[0;33m16623553410910 ns   35885477392 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak_mean             [m[0;33m16623258244820 ns   35590550954 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_weak_median           [m[0;33m16623257150639 ns   35589570824 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_weak_stddev           [m[0;33m 175774849 ns    175633518 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623600397635 ns   35929869227 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623621736007 ns   35951178935 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623643347757 ns   35972791764 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623664675863 ns   35994119460 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623686236114 ns   36015680157 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623707850137 ns   36037295989 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623728918822 ns   36058362669 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623750730131 ns   36080015424 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623772112965 ns   36101399696 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623793570124 ns   36122880014 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623815118547 ns   36144435737 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623838274445 ns   36167098207 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623859779218 ns   36188847729 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623880682025 ns   36209750438 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623902365483 ns   36231434517 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623923537847 ns   36252605321 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623945159608 ns   36274226985 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623966568974 ns   36295638160 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16623987946451 ns   36316956010 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624010820679 ns   36339068402 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624031638028 ns   36360282337 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624053059616 ns   36381701930 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624074529384 ns   36403173549 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624095786910 ns   36424429536 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624117279232 ns   36445922093 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624138806427 ns   36467450294 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624160327520 ns   36488971451 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624181546698 ns   36510189180 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624203234140 ns   36531878672 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624224579996 ns   36553224228 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624246071944 ns   36574597851 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624269628261 ns   36598213977 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624290024685 ns   36618609049 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624311492538 ns   36640078762 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624332818801 ns   36661403937 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624355925416 ns   36684083129 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624376518925 ns   36704889844 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624397978135 ns   36726347312 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624419491687 ns   36747862237 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624440830466 ns   36769198624 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624462455021 ns   36790825884 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624483556504 ns   36811926164 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624506286734 ns   36834277261 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624527213007 ns   36855392379 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624548604218 ns   36876783863 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624570081087 ns   36898258652 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624591566748 ns   36919746107 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624612711218 ns   36940889712 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624634374409 ns   36962553703 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak                [m[0;33m16624655753479 ns   36983932449 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak_mean           [m[0;33m16624128280001 ns   36457014980 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_weak_median         [m[0;33m16624128042830 ns   36456686193 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_weak_stddev         [m[0;33m 314207957 ns    313783328 ns   [m[0;36m        50[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak                     [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_weak_mean                [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mE_update_weak_median              [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mE_update_weak_stddev              [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mA_create_legacy                   [m[0;33m    543210 ns       542663 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    539293 ns       538718 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    535776 ns       535463 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537362 ns       536872 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    536336 ns       536035 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537908 ns       537343 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    544120 ns       543722 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    553055 ns       552622 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    541070 ns       540535 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    536622 ns       536302 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    555695 ns       554852 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    547899 ns       547102 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    547936 ns       546953 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    538265 ns       537631 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540144 ns       539056 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537479 ns       536181 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    545670 ns       537696 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    538865 ns       538221 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    541454 ns       540444 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    541300 ns       539762 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540546 ns       539706 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    541409 ns       539821 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    539595 ns       539036 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540903 ns       539779 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    542239 ns       540298 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540183 ns       539191 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537070 ns       536269 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537060 ns       536496 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537442 ns       537003 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540056 ns       539186 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537925 ns       537453 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    536448 ns       535940 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537244 ns       536437 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537143 ns       536476 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    536824 ns       535992 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    539932 ns       539434 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540742 ns       540142 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540612 ns       539791 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    539975 ns       539449 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    538429 ns       538026 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    539099 ns       538253 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    541883 ns       541394 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540839 ns       540043 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    540602 ns       540172 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    538398 ns       537921 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    537959 ns       537019 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    542920 ns       540674 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    541016 ns       540287 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    542670 ns       540658 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy                   [m[0;33m    535695 ns       534552 ns   [m[0;36m      1282[m
+[m[0;32mA_create_legacy_mean              [m[0;33m    540446 ns       539501 ns   [m[0;36m        50[m
+[m[0;32mA_create_legacy_median            [m[0;33m    540016 ns       539121 ns   [m[0;36m        50[m
+[m[0;32mA_create_legacy_stddev            [m[0;33m      4009 ns         3889 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659383964599 ns   71647422606 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659385554208 ns   71648708041 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659386345827 ns   71649494321 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659387092946 ns   71650243551 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659387852732 ns   71651003528 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659388582663 ns   71651733799 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659389314296 ns   71652468642 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659390136101 ns   71653288649 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659390961547 ns   71654112220 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659391736951 ns   71654888639 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659392479276 ns   71655630444 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659393152433 ns   71656303724 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659393863329 ns   71657014196 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659394473235 ns   71657623026 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659395046648 ns   71658197500 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659395567278 ns   71658717046 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659396189904 ns   71659341581 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659396713282 ns   71659864041 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659397275813 ns   71660427578 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659397796668 ns   71660947408 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659398315728 ns   71661466114 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659398878288 ns   71662029054 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659399397380 ns   71662547552 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659399962734 ns   71663113563 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659400481516 ns   71663631501 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659401053258 ns   71664204095 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659401572366 ns   71664722437 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659402175969 ns   71665327634 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659402696228 ns   71665846959 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659403255692 ns   71666407394 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659403776200 ns   71666926944 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659404335397 ns   71667487093 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659404855902 ns   71668006654 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659405380139 ns   71668530480 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659405956676 ns   71669107563 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659406476047 ns   71669626169 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659407036309 ns   71670187145 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659407555629 ns   71670705746 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659408256570 ns   71671399654 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659408779742 ns   71671921439 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659409342863 ns   71672485513 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659409863601 ns   71673005328 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659410383093 ns   71673524219 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659410955547 ns   71674097278 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659411475188 ns   71674616252 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659412037312 ns   71675179122 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659412557049 ns   71675698104 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659413161231 ns   71676303890 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659413682194 ns   71676823883 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy                 [m[0;33m16659414242137 ns   71677384891 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_legacy_mean            [m[0;33m16659400439954 ns   71663594884 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_legacy_median          [m[0;33m16659400767387 ns   71663917798 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_legacy_stddev          [m[0;33m   8528892 ns      8505851 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659427684097 ns   71690579551 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659439966545 ns   71702651424 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659451530158 ns   71714213755 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659463146424 ns   71725831090 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659474669264 ns   71737354089 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659486355620 ns   71749040681 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659497882331 ns   71760567238 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659509422412 ns   71772105921 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659523765824 ns   71786395166 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659535369074 ns   71797996868 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659546917318 ns   71809535856 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659559446430 ns   71821322313 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659571059178 ns   71832934550 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659582676959 ns   71844550925 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659594312666 ns   71856188354 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659605958807 ns   71867706665 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659617508400 ns   71879253478 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659629312719 ns   71891059587 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659640935883 ns   71902682713 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659652466682 ns   71914212082 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659664233765 ns   71925971295 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659675758839 ns   71937496075 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659687402088 ns   71949139472 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659698963644 ns   71960700776 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659710546580 ns   71972282239 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659722171314 ns   71983908515 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659733793069 ns   71995530327 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659745678166 ns   72007205402 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659757300904 ns   72018826036 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659768823341 ns   72030348411 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659780455973 ns   72041980021 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659792017409 ns   72053542513 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659803631661 ns   72065154871 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659815372949 ns   72076889883 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659826976852 ns   72088493731 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659838504631 ns   72100020183 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659850272750 ns   72111789635 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659861860173 ns   72123377094 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659873404600 ns   72134893071 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659885168676 ns   72146575700 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659896753985 ns   72158161263 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659908316122 ns   72169723246 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659919929606 ns   72181336725 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659931522166 ns   72192928889 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659943155187 ns   72204554161 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659954757605 ns   72216156861 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659966492773 ns   72227892239 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659977993642 ns   72239392873 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16659989597106 ns   72250994727 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy                [m[0;33m16660001314151 ns   72262713259 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy_mean           [m[0;33m16659715851130 ns   71977683236 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_legacy_median         [m[0;33m16659716358947 ns   71978095377 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_legacy_stddev         [m[0;33m 170372691 ns    169943680 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660049850884 ns   72311129516 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660067909302 ns   72329196843 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660091887896 ns   72351500338 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660111267948 ns   72371714661 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660132162153 ns   72392609180 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660153495839 ns   72413689647 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660174922877 ns   72434999871 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660195676574 ns   72455876903 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660216625581 ns   72476807191 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660237713026 ns   72497904010 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660258560454 ns   72518749818 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660281267758 ns   72541459901 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660302409252 ns   72562599830 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660323899356 ns   72584087975 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660344592536 ns   72604760843 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660365451510 ns   72625630879 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660386324734 ns   72646503443 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660407558614 ns   72667491002 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660428345573 ns   72688401188 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660449297700 ns   72709352255 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660470260257 ns   72730275927 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660491170645 ns   72751205140 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660512259431 ns   72772294064 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660533101494 ns   72793136179 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660556160891 ns   72816022154 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660578679579 ns   72838304994 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660598802261 ns   72858562243 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660620072391 ns   72879844756 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660641344010 ns   72901117049 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660662333091 ns   72922105473 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660683868646 ns   72943369272 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660704672237 ns   72964309244 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660726204533 ns   72985819838 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660747389401 ns   73006899287 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660768404898 ns   73027970362 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660789573215 ns   73049119400 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660810931982 ns   73070491111 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660831911478 ns   73091468963 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660853106228 ns   73112643066 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660874217463 ns   73133765211 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660895372007 ns   73154919025 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660916377147 ns   73175922429 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660937835021 ns   73197163577 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660958878239 ns   73218315749 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16660980219927 ns   73239637041 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16661001224880 ns   73260653117 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16661022460512 ns   73281888549 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16661044951432 ns   73304162243 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16661065363172 ns   73324664582 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy              [m[0;33m16661087764646 ns   73346572799 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy_mean         [m[0;33m16660566882614 ns   72826741763 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_legacy_median       [m[0;33m16660567420235 ns   72827163574 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_legacy_stddev       [m[0;33m 309051442 ns    308653541 ns   [m[0;36m        50[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy                   [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_legacy_mean              [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mE_update_legacy_median            [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mE_update_legacy_stddev            [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mA_create_subscription             [m[0;33m    587001 ns       586045 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    587736 ns       584298 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    592516 ns       591307 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    586204 ns       584696 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    587771 ns       586024 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    587529 ns       585297 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    586366 ns       582571 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582237 ns       581310 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    581899 ns       581037 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    585526 ns       584258 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    586905 ns       585837 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582315 ns       581557 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    581576 ns       580985 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582210 ns       581743 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582663 ns       581761 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582786 ns       581471 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    584791 ns       583921 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    585025 ns       583995 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582965 ns       582507 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    583540 ns       582824 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    589303 ns       588523 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    587870 ns       587348 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    585021 ns       584708 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    582401 ns       581868 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    583071 ns       582080 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    588146 ns       587522 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    586962 ns       586339 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    590414 ns       589461 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    587744 ns       587337 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    586637 ns       585826 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    584194 ns       583235 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    583595 ns       582590 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    584287 ns       583277 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    592357 ns       591525 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    588530 ns       587933 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    588207 ns       587222 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    590385 ns       589953 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    595044 ns       593770 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    591437 ns       590905 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    590691 ns       589915 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    592826 ns       592164 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    591402 ns       590959 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    588230 ns       587363 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    587216 ns       586478 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    590887 ns       587467 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    599902 ns       597935 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    590020 ns       588144 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    589619 ns       588144 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    594525 ns       592371 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription             [m[0;33m    588382 ns       587515 ns   [m[0;36m      1196[m
+[m[0;32mA_create_subscription_mean        [m[0;33m    587377 ns       586266 ns   [m[0;36m        50[m
+[m[0;32mA_create_subscription_median      [m[0;33m    587373 ns       586034 ns   [m[0;36m        50[m
+[m[0;32mA_create_subscription_stddev      [m[0;33m      3950 ns         3836 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696300634538 ns   108492183272 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696301833936 ns   108493206480 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696302558693 ns   108493931825 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696303334289 ns   108494709031 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696304173716 ns   108495546867 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696304965031 ns   108496338636 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696305922133 ns   108497295128 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696306690415 ns   108498064021 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696307512056 ns   108498884712 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696308211201 ns   108499586654 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696308990643 ns   108500363884 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696309651444 ns   108501024916 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696310195295 ns   108501571036 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696310929077 ns   108502303592 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696311483581 ns   108502855943 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696312059559 ns   108503432672 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696312713851 ns   108504088078 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696313242422 ns   108504615081 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696313863844 ns   108505237125 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696314414936 ns   108505787685 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696314981660 ns   108506354707 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696315580669 ns   108506953320 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696316191591 ns   108507565603 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696316790182 ns   108508163571 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696317312722 ns   108508685256 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696317956511 ns   108509329999 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696318561545 ns   108509934305 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696319416259 ns   108510788527 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696320307780 ns   108511680512 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696321145038 ns   108512518163 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696321780279 ns   108513153388 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696322418756 ns   108513792710 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696322984115 ns   108514357899 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696323557508 ns   108514930674 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696324090644 ns   108515463944 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696324610895 ns   108515983441 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696325239165 ns   108516613057 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696325761779 ns   108517134912 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696326326037 ns   108517698729 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696326916887 ns   108518290378 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696327437146 ns   108518810038 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696328127045 ns   108519487677 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696328647697 ns   108520007794 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696329281635 ns   108520642492 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696329803596 ns   108521163691 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696330365950 ns   108521725610 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696330958497 ns   108522318985 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696331478584 ns   108522838475 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696332152991 ns   108523513864 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription           [m[0;33m16696332675333 ns   108524035476 ns   [m[0;36m         1[m
+[m[0;32mB_destruct_subscription_mean      [m[0;33m16696317724783 ns   108509099277 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_subscription_median    [m[0;33m16696317634616 ns   108509007628 ns   [m[0;36m        50[m
+[m[0;32mB_destruct_subscription_stddev    [m[0;33m   9312939 ns      9284241 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696349163397 ns   108540287337 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696361000410 ns   108551998273 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696372743534 ns   108563739418 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696384316826 ns   108575313480 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696396056563 ns   108587054312 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696407759683 ns   108598634707 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696419527856 ns   108610401543 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696431146400 ns   108622021701 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696442831146 ns   108633706519 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696454451749 ns   108645325939 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696466148955 ns   108657015325 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696477848630 ns   108668714802 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696489366261 ns   108680231299 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696501248669 ns   108692115803 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696512875148 ns   108703741638 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696524562909 ns   108715427871 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696536203191 ns   108727069460 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696547792249 ns   108738658593 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696559465331 ns   108750331344 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696571073194 ns   108761939353 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696582602988 ns   108773468416 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696594300864 ns   108785158632 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696605852286 ns   108796709939 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696617412427 ns   108808268563 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696629030971 ns   108819888472 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696641258062 ns   108831733085 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696652845555 ns   108843320897 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696664698340 ns   108855041418 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696676389103 ns   108866733887 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696688010840 ns   108878354985 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696700195214 ns   108890410648 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696711955285 ns   108902147334 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696723667529 ns   108913852250 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696735571778 ns   108925748363 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696747369543 ns   108937534637 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696758954280 ns   108949119465 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696770755771 ns   108960919153 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696782697375 ns   108972863944 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696794407221 ns   108984572288 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696806194786 ns   108996361002 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696817944112 ns   109008109510 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696829659052 ns   109019822679 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696841508440 ns   109031663601 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696853289382 ns   109043443912 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696864938760 ns   109055093876 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696876679215 ns   109066832533 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696888493798 ns   109078648802 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696900297239 ns   109090451719 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696911882953 ns   109102037943 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription          [m[0;33m16696923606033 ns   109113758694 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription_mean     [m[0;33m16696635961026 ns   108826515987 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_subscription_median   [m[0;33m16696635144516 ns   108825810778 ns   [m[0;36m        50[m
+[m[0;32mC_subscribe_subscription_stddev   [m[0;33m 170903064 ns    170571445 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16696970683396 ns   109160087098 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16696992377135 ns   109181432118 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697013715632 ns   109202779555 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697034920540 ns   109223986575 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697056485539 ns   109245552213 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697077137897 ns   109266201357 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697098627631 ns   109287691993 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697119799991 ns   109308844022 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697141155008 ns   109330209619 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697163606733 ns   109352273972 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697184062091 ns   109372922584 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697205150837 ns   109394011151 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697228584898 ns   109417086915 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697249253890 ns   109437881345 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697270244404 ns   109458897150 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697291458912 ns   109480111630 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697312532525 ns   109501186143 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697333668907 ns   109522297615 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697357557459 ns   109546199286 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697377510635 ns   109566130897 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697398677924 ns   109587307620 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697419938843 ns   109608569879 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697441146574 ns   109629777211 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697462348172 ns   109650978776 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697483699092 ns   109672084842 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697504859386 ns   109693348439 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697526012013 ns   109714510276 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697547434661 ns   109735933317 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697568372597 ns   109756868884 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697589378240 ns   109777874296 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697610730813 ns   109799228310 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697631936060 ns   109820413799 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697653142878 ns   109841631007 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697675545530 ns   109863865056 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697696095948 ns   109884498941 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697717107724 ns   109905510189 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697739762919 ns   109928044191 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697760239561 ns   109948580867 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697782318857 ns   109970281621 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697803190879 ns   109991341906 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697824310863 ns   110012462063 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697845314302 ns   110033463735 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697866869256 ns   110055020125 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697888090989 ns   110076242248 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697909467680 ns   110097619943 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697930385658 ns   110118534956 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697951733142 ns   110139882759 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697972892670 ns   110161043972 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16697994240192 ns   110182327321 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription        [m[0;33m16698015430310 ns   110203549068 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription_mean   [m[0;33m16697493784156 ns   109682331577 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_subscription_median [m[0;33m16697494279239 ns   109682716640 ns   [m[0;36m        50[m
+[m[0;32mD_unsubscribe_subscription_stddev [m[0;33m 310806239 ns    310488264 ns   [m[0;36m        50[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription             [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mE_update_subscription_mean        [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mE_update_subscription_median      [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m[0;32mE_update_subscription_stddev      [m[0;33m     0.000 ns        0.000 ns   [m[0;36m        50[m
+[m

@@ -1,0 +1,28 @@
+2020-09-15 02:38:53
+Running /pubsub/build/bin/pubsub
+Run on (2 X 1598.82 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x2)
+  L1 Instruction 32K (x2)
+  L2 Unified 256K (x2)
+  L3 Unified 3072K (x2)
+Load Average: 0.08, 0.07, 0.08
+---------------------------------------------------------------------
+Benchmark                           Time             CPU   Iterations
+---------------------------------------------------------------------
+[0;32mA_create_subscription      [m[0;33m    555002 ns       551666 ns   [m[0;36m      1269[m
+[m[0;32mB_destruct_subscription    [m[0;33m920996923758 ns    801442209 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription   [m[0;33m921009209586 ns    813643709 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription [m[0;33m921051659354 ns    856016744 ns   [m[0;36m         1[m
+[m[0;32mE_update_subscription      [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mA_create_weak              [m[0;33m    575830 ns       571812 ns   [m[0;36m      1286[m
+[m[0;32mB_destruct_weak            [m[0;33m921839348975 ns   1638189374 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak           [m[0;33m921851775954 ns   1650549798 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak         [m[0;33m921906033629 ns   1699129422 ns   [m[0;36m         1[m
+[m[0;32mE_update_weak              [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mA_create_legacy            [m[0;33m    538718 ns       537385 ns   [m[0;36m      1297[m
+[m[0;32mB_destruct_legacy          [m[0;33m922647089280 ns   2440352580 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy         [m[0;33m922659519458 ns   2452423048 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy       [m[0;33m922701934518 ns   2494456921 ns   [m[0;36m         1[m
+[m[0;32mE_update_legacy            [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m

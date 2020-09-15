@@ -1,4 +1,4 @@
-# publish-subscribe
+# publish-subscribe/s
 
 
 ## Purpose

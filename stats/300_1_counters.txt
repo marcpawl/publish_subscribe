@@ -1,0 +1,28 @@
+2020-09-15 05:46:12
+Running /pubsub/build/bin/pubsub
+Run on (2 X 1598.82 MHz CPU s)
+CPU Caches:
+  L1 Data 32K (x2)
+  L1 Instruction 32K (x2)
+  L2 Unified 256K (x2)
+  L3 Unified 3072K (x2)
+Load Average: 0.17, 0.48, 0.78
+---------------------------------------------------------------------
+Benchmark                           Time             CPU   Iterations
+---------------------------------------------------------------------
+[0;32mA_create_weak              [m[0;33m    547419 ns       545804 ns   [m[0;36m      1220[m
+[m[0;32mB_destruct_weak            [m[0;33m12167582256643 ns    769778425 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_weak           [m[0;33m12167594845626 ns    782348956 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_weak         [m[0;33m12167636927852 ns    824084831 ns   [m[0;36m         1[m
+[m[0;32mE_update_weak              [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mA_create_legacy            [m[0;33m    540873 ns       539850 ns   [m[0;36m      1274[m
+[m[0;32mB_destruct_legacy          [m[0;33m12168373668779 ns   1559447887 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_legacy         [m[0;33m12168388204571 ns   1573853571 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_legacy       [m[0;33m12168432991556 ns   1618511241 ns   [m[0;36m         1[m
+[m[0;32mE_update_legacy            [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m[0;32mA_create_subscription      [m[0;33m    549492 ns       547930 ns   [m[0;36m      1298[m
+[m[0;32mB_destruct_subscription    [m[0;33m12169192491851 ns   2375957018 ns   [m[0;36m         1[m
+[m[0;32mC_subscribe_subscription   [m[0;33m12169204778163 ns   2388204560 ns   [m[0;36m         1[m
+[m[0;32mD_unsubscribe_subscription [m[0;33m12169248610701 ns   2431795462 ns   [m[0;36m         1[m
+[m[0;32mE_update_subscription      [m[0;33m     0.000 ns        0.000 ns   [m[0;36m1000000000[m
+[m
