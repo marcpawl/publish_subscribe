@@ -15,7 +15,7 @@ services:
       args:
         USER: ${USER}
     volumes:
-      - pubsub:/pubsub
+      - ..:/pubsub
       - git_credentials_github:/git_credentials
       - home:/home/${USER}
     environment:
